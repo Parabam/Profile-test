@@ -1,0 +1,74 @@
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section styling */
+section {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* VLAN project image */
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+}
+
+/* Config explanation block */
+.config-block {
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 10px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 0.9rem;
+    white-space: pre-wrap;
+}

@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My VLAN Lab Portfolio</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My CCNA Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#project">VLAN Lab</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm Vusikaya Paraffin. I am passionate about networking and CCNA labs,
+            especially VLANs and inter-VLAN routing. This page showcases one of my VLAN projects.
+        </p>
+    </section>
+
+    <!-- VLAN Project Section -->
+    <section id="project">
+        <h2>{{ project.name }}</h2>
+
+        {% if project.image %}
+            <img
+                src="{{ url_for('static', filename='images/' + project.image) }}"
+                alt="VLAN Lab Screenshot"
+                class="project-image"
+            >
+        {% endif %}
+
+        <p><strong>Summary:</strong> {{ project.summary }}</p>
+
+        <h3>Configuration Explanation</h3>
+        <pre class="config-block">{{ project.config_explanation }}</pre>
+    </section>
+
+    <!-- Contact Section (simple text for now) -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>
+            If you would like to know more about my VLAN labs or other CCNA projects,
+            you can reach me at: <strong>Vusikayahparaffin@gmail.com</strong>
+            (you can later replace this with a real contact form).
+        </p>
+    </section>
+
+</body>
+</html>
